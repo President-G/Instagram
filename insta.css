@@ -1,0 +1,525 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+    /* understand this  */
+}
+
+body {
+    background-color: black;
+    color : white ; 
+
+}
+
+
+
+.sidebaar1{
+
+    width : 250px ;
+    border-right : 0.3px solid rgb(70, 69, 69) ;
+    position: fixed;
+    bottom : 0 ;
+    top : 0 ;
+    display : grid ;
+
+}
+
+.sidebaar1 .logo{
+    height: 80px ;  
+}
+
+
+.sidebaar1 a{
+
+    color : white ;
+    text-decoration: none;
+
+}
+
+
+.sidebaar1 .logo{
+   
+    align-self:end; 
+    font-size: 25px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left : 40px ;   
+
+   
+}
+
+
+.sidebaar1 .logo{
+   
+    display : flex ;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+
+.sidebaar1 .icons a{
+
+    margin-left : 20px ;    
+    font-size: 18px;
+    color : rgb(228, 223, 223) ;
+
+}
+
+
+
+
+.sidebaar1 .icons{
+
+    align-self:center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding : 10px ;
+    width : 90% ;
+    margin : auto ;
+    border-radius: 10px ;
+}
+
+
+.sidebaar1 .icons:hover{
+
+    background-color: rgba(128, 128, 128, 0.281);
+
+}
+
+.sidebaar1  a  i {
+
+    padding-right: 10px;
+
+}
+
+
+.sidebaar1 .icons img{
+
+    height: 20px ;
+    width: 20px;
+    border-radius: 5px;
+
+}
+
+
+.sidebaar1 .icons:hover img{
+
+    height: 21px ;
+    width: 21px;
+    border-radius: 5px;
+    transition: 0.4s;
+
+}
+
+
+.sidebaar1 .icons:hover  a i {
+
+    font-size: 1.1em;
+    transition: 0.4s;
+
+
+}
+
+body{
+
+    overflow-x: hidden;
+
+
+}
+
+.container{
+
+    display : flex ;
+    justify-content: center ;
+}
+
+.container .main{
+
+    margin-left :250px ;
+    
+    min-height : 100vh;
+    width : 700px;
+    color : black ;
+    /* border-right: 1px solid rgba(128, 128, 128, 0.5) ; */
+    padding : 100x ;
+
+}
+
+ .container .side-right{
+    height : 100vh ;
+    width : 40% ;
+ 
+  
+    
+
+}
+
+/* main content is here  */
+
+/* 1. status  */
+
+
+
+.main .status .stat img {
+
+    width : 60px ;
+    height : 60px  ; 
+    border-radius: 30px ;     
+    background: linear-gradient(135deg, yellow , #ff003c, #ff6ec7);
+    padding: 2px ;
+}
+
+ .main .status{
+
+  display : flex ;
+  justify-content: space-around;
+  margin: 20px ;
+  overflow-x: auto;
+  
+}
+
+.main .status::-webkit-scrollbar{
+
+    background: transparent;
+    
+  }
+
+
+
+.main .status .stat {
+
+    margin : 10px ;
+
+    
+}
+
+
+
+.main .right-arrow i  , .left-arrow  i {
+
+    color : white ;
+    padding : 10px ;
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 10px ;
+      
+}
+
+ /* .main .status .left-arrow {
+   
+    
+}
+
+
+.main .status .right-arrow
+{
+
+
+
+}  */
+
+.main .status  .stat {
+    color : white ;
+   
+         
+}
+
+.main .status .stat p{
+    font-size : 12px ;
+    white-space: nowrap;   /* Prevent text wrapping */
+    overflow:hidden;
+    text-overflow: ellipsis; /* Optional: Add ellipsis (...) if text overflows */
+    text-align: center;
+    
+}
+
+
+
+.container .side-right{
+    padding : 10px 20px ;
+    /* border : 1px grey ;  */
+}
+
+
+
+.container .side-right .user  img{
+
+    width : 50px ;
+    height : 50px ;
+    border-radius: 30px ;
+    
+}
+
+
+.container .side-right .user  {
+   
+    display : grid ;
+    grid-template-columns: 20% 60% 20%;
+    margin : 20px 0px ;       
+    
+}
+
+.container .side-right .user button  {
+   
+    background-color: transparent;
+    color : rgb(41, 188, 247) ;
+    border : 0px ;      
+    
+}
+
+.container .side-right .heading{
+    display : grid ;
+    grid-template-columns: 75% 30%;
+
+}
+
+.container .side-right .heading button{
+   background-color: transparent;
+   border : 0px ;
+   color : white ; 
+
+
+}
+
+.container .side-right .heading button:hover{
+  
+    color : rgb(139, 137, 137) ; 
+ 
+ 
+ }
+ 
+
+
+.container .side-right .user button:hover  {
+   
+   color : white ;   
+    
+}
+
+.container .side-right .user  a {
+    text-decoration: none ;
+    color : white ;
+    font-size: 14px;
+}
+
+.container .side-right .user  a:hover {
+    text-decoration: underline ;    
+}
+
+
+.container .side-right .user  div p {
+     font-size : 13px ;
+     color : rgb(158, 156, 156) ;
+
+}
+
+
+.container .side-right .user  div p {
+    
+    white-space: nowrap;   /* Prevent text wrapping */
+    overflow:hidden;
+    text-overflow: ellipsis; /* Optional: Add ellipsis (...) if text overflows */
+ 
+}
+
+
+.container .side-right .about a{
+    text-decoration: none ;
+    color : grey ;
+    font-size : 12px ;    
+    font-weight: 20;
+    
+
+}
+
+.container .side-right .about {
+    line-height: 15px; 
+
+}
+.container .side-right .about a:hover{
+    text-decoration: underline ;
+    color : rgb(214, 208, 208) ;
+    font-size : 12px ;    
+    font-weight: 20;
+
+}
+
+.container .side-right .about span{
+    
+    color : grey ;
+    font-size : 12px ;    
+
+}
+
+
+.container .side-right .about p{
+    color : gray ;
+    font-size : 12px ;
+    margin-top : 20px ;
+
+}
+
+
+
+.container .main .post{
+    width : 60% ;  
+    margin : auto ;
+    min-height: 100vh;
+    margin-bottom: 20px ;
+    
+
+}
+
+
+
+.main .post .post-media{
+
+    width: 100%;
+    height: 80vh;
+    border: 1px solid rgb(68, 67, 67);
+    margin : auto ;
+    border-radius: 10px;
+
+ 
+}
+
+
+.main .post .post-media video{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+ 
+}
+
+.main .post .name img {
+
+    width : 50px ;
+    height : 50px ;
+    border-radius: 30px ;
+    margin-right: 10px ;
+
+}
+
+.main .post .name i{
+
+    color : white ;
+
+}
+
+.main .post .name a{
+
+    color : white ;
+    text-decoration: none;
+}
+
+
+
+
+
+.main .post .name {
+
+    display: grid ;
+    margin-bottom: 10px ;
+   cursor: pointer;
+    grid-template-columns: 15% 80% 5% ;
+    
+}
+
+
+
+
+.main .post .post-review{
+    color : white ;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 70% ;
+    margin-top: 16px ;
+}
+
+
+.main .post .post-review i{
+    
+    font-size: 25px ;
+    cursor: pointer;
+    margin-left: 5px ;
+    
+}
+
+
+
+.main .post .post-review i:nth-child(4){
+    text-align: end;
+    
+    
+}
+
+
+
+.main .post .likes {
+    
+    margin: 10px 0px ;
+
+}
+
+.main .post .likes a {
+    
+    color : rgb(206, 202, 202) ;
+    text-decoration: none; 
+}
+
+
+.main .post .view-comment a {
+    
+    color : rgb(133, 128, 128) ;
+    text-decoration: none;
+   
+
+}
+
+
+.main .post .comment {
+    
+    color : rgb(133, 128, 128) ;
+    margin: 10px 0px ;
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.main .post{
+
+    border-bottom: 1px solid gray;
+    
+}
+
+
+
+
+
+
+
+.main .post  .name .intro{
+
+    position : absolute ;
+    z-index: 1;
+    width : 430px ;
+    height : 400px ;
+    background-color: rgba(185, 177, 177, 0.801) ;
+    opacity : 1;
+
+}
+
+
+.main .post .name:hover{
+
+    opacity : 0 ;
+   
+    
+
+}
+
+
+  
+
